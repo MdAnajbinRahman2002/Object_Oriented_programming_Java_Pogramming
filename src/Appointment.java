@@ -1,15 +1,13 @@
 import java.util.Date;
 
 public class Appointment {
-    private HealthProfessional doctor;
     private Patient patient;
-    private Illness illness;
+    private HealthProfessional doctor;
     private Date date;
 
-    public Appointment(HealthProfessional doctor, Patient patient, Illness illness, Date date) {
-        this.doctor = doctor;
+    public Appointment(Patient patient, HealthProfessional doctor, Date date) {
         this.patient = patient;
-        this.illness = illness;
+        this.doctor = doctor;
         this.date = date;
     }
 
@@ -17,11 +15,18 @@ public class Appointment {
         return patient;
     }
 
+    public HealthProfessional getDoctor() {
+        return doctor;
+    }
+
+    public Date getDate() {
+        return date;
+    }
+
     public void printDetails() {
         System.out.println("Appointment Details:");
-        doctor.printDetails();
         patient.printDetails();
-        illness.printDetails();
+        doctor.printDetails();
         System.out.println("Date: " + date);
     }
 }

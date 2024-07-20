@@ -3,25 +3,27 @@ import java.util.Date;
 
 public class AssignmentOne {
     public static void main(String[] args) {
+        // Part 3 – Using classes and objects
+        System.out.println("// Part 3 – Using classes and objects");
+
         // Create sample data
-        HealthProfessional surgeon1 = new HealthProfessional(1, "MR KARAM", "Surgery", "EPWORTH HOSPITAL");
-        HealthProfessional surgeon2 = new HealthProfessional(2, "JOHN WICK", "Surgery", "EPWORTH HOSPITAL");
-        GeneralPractitioner gp = new GeneralPractitioner(3, "JOHN CHENA", "GP", "EPWORTH HOSPITAL");
+        HealthProfessional surgeon1 = new HealthProfessional(1, "Dr. AKASH THIN", "Neuro Surgery", "Austin Hospital");
+        HealthProfessional surgeon2 = new HealthProfessional(2, "Dr. MOGOL ML", "Heart Surgery", "Austin Hospital");
+        GeneralPractitioner gp = new GeneralPractitioner(3, "Dr. Maken louf", "GP", "Austin Hospital");
+        SpecialistDoctor therapist = new SpecialistDoctor(4, "Dr. kalo manik", "Therapist", "Austin Hospital");
 
-        Patient patient1 = new Patient(1, "ALEX PATEL", "+612000054");
-        Patient patient2 = new Patient(2, "MOIN AKASH", "+619999822");
-        Patient patient3 = new Patient(3, "KALO MANIK", "+644221111");
-
-        Illness illness1 = new Illness("Brain Tumor");
-        Illness illness2 = new Illness("Heart Bulb");
-        Illness illness3 = new Illness("Allergy");
+        Patient patient1 = new Patient(1, "Rahim", "+6122221111", "Brain Tumor");
+        Patient patient2 = new Patient(2, "Karim", "+6122221123", "Heart Attack");
+        Patient patient3 = new Patient(3, "Lamin", "+6122221454", "Asthma");
+        Patient patient4 = new Patient(4, "Sallah", "+612222544", "Therapy");
 
         ArrayList<Appointment> appointments = new ArrayList<>();
 
         // Create appointments
-        appointments.add(new Appointment(surgeon1, patient1, illness1, new Date()));
-        appointments.add(new Appointment(surgeon2, patient2, illness2, new Date()));
-        appointments.add(new Appointment(gp, patient3, illness3, new Date()));
+        appointments.add(new Appointment(patient1, surgeon1, new Date()));
+        appointments.add(new Appointment(patient2, surgeon2, new Date()));
+        appointments.add(new Appointment(patient3, gp, new Date()));
+        appointments.add(new Appointment(patient4, therapist, new Date()));
 
         // Print all appointments
         System.out.println("All Appointments:");
@@ -39,5 +41,9 @@ public class AssignmentOne {
             appointment.printDetails();
             System.out.println();
         }
+
+        // Part 5 – Collection of appointments
+        System.out.println("// Part 5 – Collection of appointments");
+        System.out.println("------------------------------");
     }
 }

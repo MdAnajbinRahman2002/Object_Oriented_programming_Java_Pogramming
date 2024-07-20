@@ -15,7 +15,7 @@ public class HealthProfessional {
         this.practiceLocation = practiceLocation;
     }
 
-    public int getId() {
+    public int getID() {
         return ID;
     }
 
