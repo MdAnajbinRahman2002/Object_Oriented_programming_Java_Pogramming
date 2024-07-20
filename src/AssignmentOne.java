@@ -6,7 +6,7 @@ public class AssignmentOne {
         // Part 3 – Using classes and objects
         System.out.println("// Part 3 – Using classes and objects");
 
-        // Create sample data
+        // Creating data
         HealthProfessional surgeon1 = new HealthProfessional(1, "Dr. AKASH THIN", "Neuro Surgery", "Austin Hospital");
         HealthProfessional surgeon2 = new HealthProfessional(2, "Dr. MOGOL ML", "Heart Surgery", "Austin Hospital");
         GeneralPractitioner gp = new GeneralPractitioner(3, "Dr. Maken louf", "GP", "Austin Hospital");
@@ -19,23 +19,23 @@ public class AssignmentOne {
 
         ArrayList<Appointment> appointments = new ArrayList<>();
 
-        // Create appointments
+        // appointments
         appointments.add(new Appointment(patient1, surgeon1, new Date()));
         appointments.add(new Appointment(patient2, surgeon2, new Date()));
         appointments.add(new Appointment(patient3, gp, new Date()));
         appointments.add(new Appointment(patient4, therapist, new Date()));
 
-        // Print all appointments
+        // Printing all appointments
         System.out.println("All Appointments:");
         for (Appointment appointment : appointments) {
             appointment.printDetails();
             System.out.println();
         }
 
-        // Cancel an appointment for patient with ID 1
-        CancelAppointment.cancelAppointment(appointments, 1);
+        // Cancel an appointment for patient with ID 2
+        CancelAppointment.cancelAppointment(appointments, 2);
 
-        // Print all appointments after cancellation
+        // Appointments after cancellation
         System.out.println("Appointments after cancellation:");
         for (Appointment appointment : appointments) {
             appointment.printDetails();
@@ -43,7 +43,7 @@ public class AssignmentOne {
         }
 
         // Part 5 – Collection of appointments
-        System.out.println("// Part 5 – Collection of appointments");
+        System.out.println("//Part 5 – Collection of appointments");
         System.out.println("------------------------------");
     }
 }

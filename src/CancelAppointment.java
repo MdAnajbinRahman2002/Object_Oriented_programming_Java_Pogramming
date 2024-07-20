@@ -12,7 +12,7 @@ public class CancelAppointment {
 
         if (appointmentToRemove != null) {
             appointments.remove(appointmentToRemove);
-            System.out.println("Appointment cancelled successfully for Patient ID: " + patientId);
+            System.out.println("Appointment Got Cancelled for Patient ID: " + patientId);
         } else {
             System.out.println("No appointment found for the given Patient ID: " + patientId);
         }
