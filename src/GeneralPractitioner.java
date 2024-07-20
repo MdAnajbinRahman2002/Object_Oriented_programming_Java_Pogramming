@@ -3,7 +3,7 @@ public class GeneralPractitioner extends HealthProfessional {
         // default constructor
     }
 
-    public GeneralPractitioner(String name, String specialization, String practiceLocation) {
-        super(name, specialization, practiceLocation);
+    public GeneralPractitioner(int ID, String name, String specialization, String practiceLocation) {
+        super(ID, name, specialization, practiceLocation);
     }
 }

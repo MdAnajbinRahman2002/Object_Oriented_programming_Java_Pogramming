@@ -1,4 +1,5 @@
 public class HealthProfessional {
+    private int ID;
     private String name;
     private String specialization;
     private String practiceLocation;
@@ -7,13 +8,18 @@ public class HealthProfessional {
         // default constructor
     }
 
-    public HealthProfessional(String name, String specialization, String practiceLocation) {
+    public HealthProfessional(int ID, String name, String specialization, String practiceLocation) {
+        this.ID = ID;
         this.name = name;
         this.specialization = specialization;
         this.practiceLocation = practiceLocation;
     }
 
+    public int getId() {
+        return ID;
+    }
+
     public void printDetails() {
-        System.out.println("Name: " + name + ", Specialization: " + specialization + ", Practice Location: " + practiceLocation);
+        System.out.println("ID: " + ID + ", Name: " + name + ", Specialization: " + specialization + ", Practice Location: " + practiceLocation);
     }
 }

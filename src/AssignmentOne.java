@@ -4,22 +4,22 @@ import java.util.Date;
 public class AssignmentOne {
     public static void main(String[] args) {
         // Create sample data
-        HealthProfessional surgeon = new HealthProfessional("Dr. Smith", "Surgery", "Hospital A");
-        HealthProfessional surgeon2 = new HealthProfessional("Dr. Lee", "Surgery", "Hospital B");
-        GeneralPractitioner gp = new GeneralPractitioner("Dr. Johnson", "GP", "Clinic B");
+        HealthProfessional surgeon1 = new HealthProfessional(1, "MR KARAM", "Surgery", "EPWORTH HOSPITAL");
+        HealthProfessional surgeon2 = new HealthProfessional(2, "JOHN WICK", "Surgery", "EPWORTH HOSPITAL");
+        GeneralPractitioner gp = new GeneralPractitioner(3, "JOHN CHENA", "GP", "EPWORTH HOSPITAL");
 
-        Patient patient1 = new Patient(1, "John Doe", "123-456-7890");
-        Patient patient2 = new Patient(2, "Jane Doe", "098-765-4321");
-        Patient patient3 = new Patient(3, "Alice Johnson", "555-555-5555");
+        Patient patient1 = new Patient(1, "ALEX PATEL", "+612000054");
+        Patient patient2 = new Patient(2, "MOIN AKASH", "+619999822");
+        Patient patient3 = new Patient(3, "KALO MANIK", "+644221111");
 
-        Illness illness1 = new Illness("Flu");
-        Illness illness2 = new Illness("Cold");
+        Illness illness1 = new Illness("Brain Tumor");
+        Illness illness2 = new Illness("Heart Bulb");
         Illness illness3 = new Illness("Allergy");
 
         ArrayList<Appointment> appointments = new ArrayList<>();
 
         // Create appointments
-        appointments.add(new Appointment(surgeon, patient1, illness1, new Date()));
+        appointments.add(new Appointment(surgeon1, patient1, illness1, new Date()));
         appointments.add(new Appointment(surgeon2, patient2, illness2, new Date()));
         appointments.add(new Appointment(gp, patient3, illness3, new Date()));
 
