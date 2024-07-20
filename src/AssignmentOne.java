@@ -3,7 +3,7 @@ import java.util.Date;
 
 public class AssignmentOne {
     public static void main(String[] args) {
-        // Part 3 – Using classes and objects
+        // Using classes and objects
         System.out.println("// Part 3 – Using classes and objects");
 
         // Creating data
