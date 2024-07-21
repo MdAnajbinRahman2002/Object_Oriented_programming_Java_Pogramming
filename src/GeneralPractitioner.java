@@ -4,7 +4,7 @@ public class GeneralPractitioner extends HealthProfessional {
     }
 
     public GeneralPractitioner(int ID, String name, String specialization, String practiceLocation) {
-        super(ID, name, specialization, practiceLocation);
+        super(ID, name, specialization, practiceLocation); // calls the constructor of the superclass (HealthProfessional) with these parameters
     }
 
     @Override
